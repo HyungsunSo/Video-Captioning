@@ -1,0 +1,13 @@
+model_params:
+  video_dim: 512
+  llm_dim: 1536
+  num_queries: 32
+
+train_params:
+  stage1:
+    batch_size: 32
+    epochs: 5
+    lr: 0.00005  # 5e-5
+
+paths:
+  weights: "best_qformer_stage1.pt"
